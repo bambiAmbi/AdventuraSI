@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<?import javafx.scene.image.Image?>
+<GridPane fx:controller="cz.vse.ambr00.adventurasi.main.SoubojController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="130.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+  </rowConstraints>
+   <children>
+      <Label fx:id="nepritel1" text="Nepritel 1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="nepritel2" text="Nepritel 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+      <Label fx:id="zivotyNepritel1" text="Zivoty 1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Label fx:id="nepritelZivoty2" text="Zivoty 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER" />
+      <Button fx:id="zautocit" onAction="#zautocit" mnemonicParsing="false" text="Zautocit 1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Button fx:id="zautocit2" onAction="#zautocit2" mnemonicParsing="false" text="Zautocit 2" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER" />
+      <Separator prefWidth="200.0" GridPane.rowIndex="4" />
+      <Separator prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="pouzitElixirZdravi" onAction="#pouzitiElixiruZdravi" mnemonicParsing="false" text="Elixir Zdravi" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Button fx:id="pouzitElixirSily" onAction="#pouzitiElixiruSily" mnemonicParsing="false" text="Elixir Sily" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+      <Label fx:id="info" prefHeight="18.0" prefWidth="202.0" text="Info" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+      <Label fx:id="zivotyLabel" text="Label" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="10.0" />
+         </GridPane.margin>
+      </Label>
+      <ImageView fx:id="zivotyObrazek"  fitHeight="22.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+         <GridPane.margin>
+            <Insets right="40.0" />
+         </GridPane.margin>
+          <image>
+              <Image url="@Srdicko.png" />
+          </image>
+      </ImageView>
+   </children>
+</GridPane>
